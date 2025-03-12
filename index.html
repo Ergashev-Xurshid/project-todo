@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo List</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">TODO LIST</h1>
+    <p class="title-text">created by <a href="https://t.me/xurshid0317" target="_blank">Khurshid</a></p>
+  </header>
+  <main>
+    <form id="form">
+        <div>
+          <input id="formInput" type="text" placeholder="Enter the task..." autocomplete="off" \> <br/>
+          <span id="danger-text" class="show-massege"></span>
+        </div>
+        <button class="formSubmit" type="submit">Add</button>
+    </form>
+    <ul id="listGroup"></ul>
+    <div id="modal-overflov" class="hidden">
+      <div id="modal" class="hidden">
+        <img id="modalClose" src="./images/close_img.png" alt="close">
+        <form id="modal-form">
+          <div>
+            <input id="modalInput" type="text" autocomplete="off" placeholder="Change todo...">
+          <span id="modal-danger-text" class="show-massege"></span>
+          </div>
+          <button id="modalChange">Change</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
